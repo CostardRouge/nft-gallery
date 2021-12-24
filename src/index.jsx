@@ -1,11 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import SketchesExplorer from "./SketchesExplorer";
+import tree from "./tree.json";
+import Gallery from "./pages/Gallery";
 
 ReactDOM.render(
   <React.StrictMode>
-    <SketchesExplorer />
+    <Gallery tree={tree} />
   </React.StrictMode>,
   document.getElementById("root")
 );

@@ -1,1 +1,1 @@
-# sketches-explorer
+# nft-gallery

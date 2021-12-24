@@ -1,0 +1,40 @@
+body,
+html {
+  height: 100vh;
+  --dark-color: #000000;
+  --light-color: #f9f7f2;
+}
+
+body {
+  color: var(--dark-color);
+  font-size: 14px;
+  font-family: monospace;
+  margin: 0;
+}
+
+div#root {
+  background: var(--light-color);
+  border: 1em solid var(--dark-color);
+  padding: 1em;
+  height: calc(100vh - 4em);
+  overflow-y: auto;
+}
+
+ul ul {
+  /* columns: 2; */
+}
+
+ul > li {
+  /* text-decoration: underline; */
+}
+
+ul ul > li {
+  border: 1px solid var(--dark-color);
+  border-bottom-width: 2px;
+  width: fit-content;
+  margin-top: 3px;
+  padding: 10px;
+  /* white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden; */
+}

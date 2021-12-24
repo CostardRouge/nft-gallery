@@ -1,12 +1,11 @@
-import "./SketchesExplorer.css";
-import tree from "./tree.json";
+import "./Gallery.css";
 import { map } from "lodash";
 
-const SketchesExplorer = () => {
+const Gallery = ({ tree }) => {
   return (
     <div>
       <h2>
-        Sketches explorer{" "}
+        Gallery{" "}
         <a href="https://www.twitter.com/BlousonRouge" target="_blank">
           @BlousonRouge
         </a>
@@ -33,4 +32,4 @@ const SketchesExplorer = () => {
   );
 };
 
-export default SketchesExplorer;
+export default Gallery;
