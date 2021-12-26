@@ -7,7 +7,7 @@ html {
 
 body {
   color: var(--dark-color);
-  font-size: 14px;
+  font-size: 1.2em;
   font-family: monospace;
   margin: 0;
 }
@@ -20,21 +20,37 @@ div#root {
   overflow-y: auto;
 }
 
+h2 {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
 ul ul {
-  /* columns: 2; */
+  columns: 1;
+}
+
+@media (min-width: 400px) {
+  ul ul {
+    columns: 2;
+  }
+}
+
+@media (min-width: 600px) {
+  ul ul {
+    columns: 3;
+  }
+}
+
+@media (min-width: 800px) {
+  ul ul {
+    columns: 4;
+  }
 }
 
 ul > li {
-  /* text-decoration: underline; */
+  text-decoration: underline;
 }
 
 ul ul > li {
-  border: 1px solid var(--dark-color);
-  border-bottom-width: 2px;
-  width: fit-content;
-  margin-top: 3px;
-  padding: 10px;
-  /* white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden; */
+  padding: 0.5em;
 }

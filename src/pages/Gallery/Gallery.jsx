@@ -5,7 +5,7 @@ const Gallery = ({ tree }) => {
   return (
     <div>
       <h2>
-        Gallery{" "}
+        NFT Gallery{" - "}
         <a href="https://www.twitter.com/BlousonRouge" target="_blank">
           @BlousonRouge
         </a>
