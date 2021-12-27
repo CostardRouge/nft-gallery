@@ -6,10 +6,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist",
-    "predeploy": "npm run build -- --base=nft-gallery",
-    "nft-gallery": "hell"
+    "predeploy": "npm run build -- --base=nft-gallery"
   },
-  "main": "./bin/test.js",
   "dependencies": {
     "lodash": "^4.17.21",
     "react": "^17.0.2",
@@ -21,6 +19,6 @@
     "vite": "^2.7.2"
   },
   "bin": {
-    "hell": "./bin/test.js"
+    "nft-gallery": "./bin/nft-gallery.js"
   }
 }

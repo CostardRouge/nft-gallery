@@ -4,7 +4,7 @@ import { map } from "lodash";
 const Gallery = ({ tree }) => {
   return (
     <div>
-      <h2>
+      <h2 hidden>
         NFT Gallery{" - "}
         <a href="https://www.twitter.com/BlousonRouge" target="_blank">
           @BlousonRouge
@@ -15,11 +15,9 @@ const Gallery = ({ tree }) => {
           <li key={sketchTheme}>
             <h3>{sketchTheme}</h3>
             <ul>
-              {map(sketches, ({ name, _path }) => (
+              {map(sketches, ({ meta: { name }, path }) => (
                 <li key={name}>
-                  <a
-                    href={`/generative-art-p5js/sketches/${sketchTheme}/${name}`}
-                  >
+                  <a href={`${ import.meta.env.BASE_URL}${path}`} target="_blank">
                     {name}
                   </a>
                 </li>
