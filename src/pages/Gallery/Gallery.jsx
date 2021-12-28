@@ -1,7 +1,21 @@
+import { useEffect, useState } from "react";
+
 import "./Gallery.css";
 import { map } from "lodash";
 
-const Gallery = ({ tree }) => {
+const Gallery = () => {
+  const [tree, setTree] = useState({});
+
+  useEffect(() => {
+    fetch(`${import.meta.env.BASE_URL}tree.json`)
+      .then((res) => res.json())
+      .then(setTree, console.error);
+  }, [])
+
+  if (!tree) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <div>
       <h2 hidden>
@@ -10,6 +24,7 @@ const Gallery = ({ tree }) => {
           @BlousonRouge
         </a>
       </h2>
+
       <ul>
         {map(tree, (sketches, sketchTheme) => (
           <li key={sketchTheme}>
@@ -17,7 +32,9 @@ const Gallery = ({ tree }) => {
             <ul>
               {map(sketches, ({ meta: { name }, path }) => (
                 <li key={name}>
-                  <a href={`${ import.meta.env.BASE_URL}${path}`} target="_blank">
+                  <a
+                    href={`${import.meta.env.BASE_URL}${path}`}
+                  >
                     {name}
                   </a>
                 </li>
