@@ -30,7 +30,7 @@ h3 {
   border: 1px solid white;
   border-left: none;
   padding: 0.5em;
-  margin: 0 0 0.5em;
+  margin: 0 0 0.5em -10px;
   width: fit-content;
   text-transform: uppercase;
   position: sticky;
@@ -44,16 +44,24 @@ h3 {
 .sketch {
   display: inline-block;
   max-width: calc(45vw);
-  margin: 2px;
+  margin: 0 2px;
 
-  /* vertical-align: text-top; */
+  border: 1px solid white;
   position: relative;
 
   overflow: hidden;
 }
 
-.sketch+.sketch {
-  margin: 2px
+@media screen and (min-width: 800px) {
+  .sketch {
+    max-width: calc(25vw);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .sketch {
+    max-width: calc(15vw);
+  }
 }
 
 .sketch span {
@@ -69,17 +77,14 @@ h3 {
 }
 
 .sketch span {
-  border-top: 1px solid black;
+  border-top: 1px solid white;
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(0.3rem); 
 }
 
 .sketch:hover span {
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(0.1rem); 
   background: rgba(0, 0, 0, 0.2);
-
-  /* background: linear-gradient(360deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%); */
 }
 
 a:-webkit-any-link {
