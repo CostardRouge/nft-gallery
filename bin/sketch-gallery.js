@@ -30,9 +30,9 @@ viteBuildingCommand
     ghpages.publish(
       viteBuildDistPath,
       {
-        message: "nft-gallery publish command",
+        message: "sketch-gallery publish command",
       },
       (error) =>
-        error ? console.log(error) : console.log("nft-gallery publish done")
+        error ? console.log(error) : console.log("sketch-gallery publish done")
     );
   });

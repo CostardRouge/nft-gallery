@@ -32,9 +32,10 @@ const Gallery = () => {
             <ul>
               {map(sketches, ({ meta: { name }, path }) => (
                 <li key={name}>
-                  <a
-                    href={`${import.meta.env.BASE_URL}${path}`}
-                  >
+                  <img src={`${import.meta.env.BASE_URL}${path}/screenshoot.png`}/>
+                  {/* <img src="https://via.placeholder.com/512x512"/> */}
+                  {/* <img src="https://costardrouge.github.io/generative-art-p5js/sketches/3d-star/hsb/screenshoot.png"/> */}
+                  <a href={`${import.meta.env.BASE_URL}${path}`}>
                     {name}
                   </a>
                 </li>

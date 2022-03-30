@@ -1,12 +1,12 @@
 {
-  "name": "nft-gallery",
+  "name": "sketch-gallery",
   "version": "0.0.1",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist",
-    "predeploy": "npm run build -- --base=nft-gallery"
+    "predeploy": "npm run build -- --base=sketch-gallery"
   },
   "dependencies": {
     "lodash": "^4.17.21",
@@ -19,6 +19,6 @@
     "vite": "^2.7.2"
   },
   "bin": {
-    "nft-gallery": "./bin/nft-gallery.js"
+    "sketch-gallery": "./bin/sketch-gallery.js"
   }
 }

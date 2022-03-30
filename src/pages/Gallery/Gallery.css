@@ -13,10 +13,11 @@ body {
 }
 
 div#root {
-  background: var(--light-color);
-  border: 1em solid var(--dark-color);
-  padding: 1em;
-  height: calc(100vh - 4em);
+  background:#949494;
+  /* var(--light-color); */
+  /* border: 1em solid var(--dark-color); */
+  /* padding: 1em; */
+  /* height: calc(100vh - 4em); */
   overflow-y: auto;
 }
 
@@ -25,26 +26,12 @@ h2 {
   margin-bottom: 1.5em;
 }
 
-ul ul {
-  columns: 1;
-}
-
-@media (min-width: 400px) {
-  ul ul {
-    columns: 2;
-  }
-}
-
-@media (min-width: 600px) {
-  ul ul {
-    columns: 3;
-  }
-}
-
-@media (min-width: 800px) {
-  ul ul {
-    columns: 4;
-  }
+ul ul > li {
+  display: inline-block;
+  margin: 2px;
+  text-overflow: ellipsis;
+  max-width: 192px;
+  vertical-align: text-top;
 }
 
 ul > li {
@@ -53,4 +40,10 @@ ul > li {
 
 ul ul > li {
   padding: 0.5em;
+}
+
+
+img {
+  max-width: 100%;
+  display: block;
 }
