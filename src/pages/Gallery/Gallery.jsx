@@ -18,25 +18,22 @@ const Gallery = () => {
 
   return (
     <div>
-      <h2 hidden>
-        NFT Gallery{" - "}
-        <a href="https://www.twitter.com/BlousonRouge" target="_blank">
-          @BlousonRouge
-        </a>
-      </h2>
+      <header>
+        <h1 hidden>&lt;Gallery author="costadrouge"/&gt;</h1>
+        <h1>My sketches using p5js 🎨</h1>
+      </header>
 
       <ul>
-        {map(tree, (sketches, sketchTheme) => (
-          <li key={sketchTheme}>
-            <h3>{sketchTheme}</h3>
+        {map(tree, (sketches, branch) => (
+          <li key={branch}>
+            <h3>{branch} ({Object.keys(sketches).length})</h3>
             <ul>
               {map(sketches, ({ meta: { name }, path }) => (
-                <li key={name}>
-                  <img src={`${import.meta.env.BASE_URL}${path}/screenshoot.png`}/>
-                  {/* <img src="https://via.placeholder.com/512x512"/> */}
-                  {/* <img src="https://costardrouge.github.io/generative-art-p5js/sketches/3d-star/hsb/screenshoot.png"/> */}
+                <li key={name} className="sketch">
                   <a href={`${import.meta.env.BASE_URL}${path}`}>
-                    {name}
+                    {/* <img src={ `https://picsum.photos/seed/${name}/200/200` }/> */}
+                    <img src={`${import.meta.env.BASE_URL}${path}/screenshoot.png`}/>
+                    <span>{name}</span>
                   </a>
                 </li>
               ))}
@@ -44,6 +41,22 @@ const Gallery = () => {
           </li>
         ))}
       </ul>
+
+      <footer>
+        <br />
+        <br />
+        <br />
+        <br />
+        <span>&nbsp;</span>
+
+        <a href="https://www.instagram.com/costardrouge.jpg/" target="_blank">
+          instagram
+        </a>
+
+        <a href="https://www.twitter.com/BlousonRouge" target="_blank">
+          twitter
+        </a>
+      </footer>
     </div>
   );
 };
