@@ -1,6 +1,20 @@
 {
   "name": "sketch-gallery",
-  "version": "0.0.4",
+  "version": "0.0.5",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/sketch-gallery.umd.js",
+  "module": "./dist/sketch-gallery.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/sketch-gallery.es.js",
+      "require": "./dist/sketch-gallery.umd.js"
+    }
+  },
+  "bin": {
+    "sketch-gallery": "./src/cli.js"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -17,8 +31,5 @@
     "@vitejs/plugin-react": "^1.0.7",
     "gh-pages": "^3.2.3",
     "vite": "^2.7.2"
-  },
-  "bin": {
-    "sketch-gallery": "./bin/sketch-gallery.js"
   }
 }

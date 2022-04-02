@@ -28,14 +28,15 @@ ul {
 
 h3 {
   border: 1px solid white;
+  outline: 1px solid black;
   border-left: none;
   padding: 0.5em;
-  margin: 0 0 0.5em -10px;
+  margin: 0.5em 0 0.5em -10px;
   width: fit-content;
   text-transform: uppercase;
   position: sticky;
   z-index: 10;
-  top: 72px;
+  top: 0.5em;
   left: 0px;
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(0.3rem);

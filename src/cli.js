@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+// #!/usr/bin/env node
 
 const shell = require("child_process").execSync;
 const ghpages = require("gh-pages");

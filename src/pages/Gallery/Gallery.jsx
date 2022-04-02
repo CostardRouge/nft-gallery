@@ -20,7 +20,7 @@ const Gallery = () => {
     <div>
       <header>
         <h1 hidden>&lt;Gallery author="costadrouge"/&gt;</h1>
-        <h1>My sketches using p5js 🎨</h1>
+        <h1>My p5js sketches 🎨</h1>
       </header>
 
       <ul>
@@ -47,11 +47,11 @@ const Gallery = () => {
         <br />
         <br />
         <br />
-        <span>&nbsp;</span>
 
         <a href="https://www.instagram.com/costardrouge.jpg/" target="_blank">
           instagram
         </a>
+        <span>&nbsp;</span>
 
         <a href="https://www.twitter.com/BlousonRouge" target="_blank">
           twitter
