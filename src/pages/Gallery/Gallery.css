@@ -44,7 +44,8 @@ h3 {
 
 .sketch {
   display: inline-block;
-  max-width: calc(45vw);
+  width: calc(45vw);
+  min-height: calc(20vw);
   margin: 0 2px;
 
   border: 1px solid white;
@@ -55,29 +56,26 @@ h3 {
 
 @media screen and (min-width: 800px) {
   .sketch {
-    max-width: calc(25vw);
+    width: calc(25vw);
   }
 }
 
 @media screen and (min-width: 1600px) {
   .sketch {
-    max-width: calc(15vw);
+    width: calc(20vw);
   }
 }
 
 .sketch span {
   hyphens: auto;
   padding: 8px;
-  font-size: 26px;
   word-break: break-word;
   text-overflow: ellipsis;
+  color: #f9f7f2;
 
   position: absolute;
   bottom: 0px;
   width: 100%;
-}
-
-.sketch span {
   border-top: 1px solid white;
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(0.3rem); 
@@ -88,9 +86,8 @@ h3 {
   background: rgba(0, 0, 0, 0.2);
 }
 
-a:-webkit-any-link {
-  color: #f9f7f2;
-  font-weight: 300;
+a:visited span {
+  color: rgb(146, 146, 146);
 }
 
 a:visited::before {
@@ -111,4 +108,8 @@ a:visited::before {
 img {
   max-width: 100%;
   display: block;
+}
+
+footer {
+  text-align: right;
 }
