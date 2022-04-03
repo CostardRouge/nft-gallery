@@ -1,4 +1,269 @@
 {
+   "3d-star": {
+      "hsb": {
+         "meta": {
+            "name": "hsb",
+            "folder": "3d-star"
+         },
+         "path": "sketches/3d-star/hsb"
+      }
+   },
+   "accident": {
+      "accident-v1-bubble": {
+         "meta": {
+            "name": "accident-v1-bubble",
+            "folder": "accident"
+         },
+         "path": "sketches/accident/accident-v1-bubble"
+      },
+      "accident-v2-rotating-bubble": {
+         "meta": {
+            "name": "accident-v2-rotating-bubble",
+            "folder": "accident"
+         },
+         "path": "sketches/accident/accident-v2-rotating-bubble"
+      },
+      "accident-v3-lava-lamp": {
+         "meta": {
+            "name": "accident-v3-lava-lamp",
+            "folder": "accident"
+         },
+         "path": "sketches/accident/accident-v3-lava-lamp"
+      },
+      "accident-v4-crack-fire": {
+         "meta": {
+            "name": "accident-v4-crack-fire",
+            "folder": "accident"
+         },
+         "path": "sketches/accident/accident-v4-crack-fire"
+      },
+      "accident-v4-cross-fire": {
+         "meta": {
+            "name": "accident-v4-cross-fire",
+            "folder": "accident"
+         },
+         "path": "sketches/accident/accident-v4-cross-fire"
+      },
+      "accident-v5-chandelier": {
+         "meta": {
+            "name": "accident-v5-chandelier",
+            "folder": "accident"
+         },
+         "path": "sketches/accident/accident-v5-chandelier"
+      },
+      "accident-v6-chandelier-warp": {
+         "meta": {
+            "name": "accident-v6-chandelier-warp",
+            "folder": "accident"
+         },
+         "path": "sketches/accident/accident-v6-chandelier-warp"
+      },
+      "accident-v6-chandelier-warp-blurry-vertical": {
+         "meta": {
+            "name": "accident-v6-chandelier-warp-blurry-vertical",
+            "folder": "accident"
+         },
+         "path": "sketches/accident/accident-v6-chandelier-warp-blurry-vertical"
+      },
+      "accident-v6-chandelier-warps": {
+         "meta": {
+            "name": "accident-v6-chandelier-warps",
+            "folder": "accident"
+         },
+         "path": "sketches/accident/accident-v6-chandelier-warps"
+      },
+      "accident-v6-chandelier-warps-blurry": {
+         "meta": {
+            "name": "accident-v6-chandelier-warps-blurry",
+            "folder": "accident"
+         },
+         "path": "sketches/accident/accident-v6-chandelier-warps-blurry"
+      },
+      "accident-v6-chandelier-warps-gradient": {
+         "meta": {
+            "name": "accident-v6-chandelier-warps-gradient",
+            "folder": "accident"
+         },
+         "path": "sketches/accident/accident-v6-chandelier-warps-gradient"
+      },
+      "accident-v6-chanderlier-warps-red": {
+         "meta": {
+            "name": "accident-v6-chanderlier-warps-red",
+            "folder": "accident"
+         },
+         "path": "sketches/accident/accident-v6-chanderlier-warps-red"
+      },
+      "accident-v7-chewing-gum-strings": {
+         "meta": {
+            "name": "accident-v7-chewing-gum-strings",
+            "folder": "accident"
+         },
+         "path": "sketches/accident/accident-v7-chewing-gum-strings"
+      },
+      "accident-v7-chewing-gum-strings-v2": {
+         "meta": {
+            "name": "accident-v7-chewing-gum-strings-v2",
+            "folder": "accident"
+         },
+         "path": "sketches/accident/accident-v7-chewing-gum-strings-v2"
+      },
+      "accident-v7-chewing-gum-strings-v3": {
+         "meta": {
+            "name": "accident-v7-chewing-gum-strings-v3",
+            "folder": "accident"
+         },
+         "path": "sketches/accident/accident-v7-chewing-gum-strings-v3"
+      },
+      "accident-v8-circle": {
+         "meta": {
+            "name": "accident-v8-circle",
+            "folder": "accident"
+         },
+         "path": "sketches/accident/accident-v8-circle"
+      },
+      "accident-v8-dansing-dna": {
+         "meta": {
+            "name": "accident-v8-dansing-dna",
+            "folder": "accident"
+         },
+         "path": "sketches/accident/accident-v8-dansing-dna"
+      },
+      "accident-v9-eccentric-acid": {
+         "meta": {
+            "name": "accident-v9-eccentric-acid",
+            "folder": "accident"
+         },
+         "path": "sketches/accident/accident-v9-eccentric-acid"
+      },
+      "accident-v9-eccentric-audio": {
+         "meta": {
+            "name": "accident-v9-eccentric-audio",
+            "folder": "accident"
+         },
+         "path": "sketches/accident/accident-v9-eccentric-audio"
+      },
+      "accident-v9-eccentric-balls-blurry": {
+         "meta": {
+            "name": "accident-v9-eccentric-balls-blurry",
+            "folder": "accident"
+         },
+         "path": "sketches/accident/accident-v9-eccentric-balls-blurry"
+      },
+      "accident-v9-eccentric-mirror": {
+         "meta": {
+            "name": "accident-v9-eccentric-mirror",
+            "folder": "accident"
+         },
+         "path": "sketches/accident/accident-v9-eccentric-mirror"
+      },
+      "accident-v9-eccentric-strip": {
+         "meta": {
+            "name": "accident-v9-eccentric-strip",
+            "folder": "accident"
+         },
+         "path": "sketches/accident/accident-v9-eccentric-strip"
+      },
+      "accident-v9-eccentric-strip-blurry": {
+         "meta": {
+            "name": "accident-v9-eccentric-strip-blurry",
+            "folder": "accident"
+         },
+         "path": "sketches/accident/accident-v9-eccentric-strip-blurry"
+      },
+      "accident-v9-eccentric-twist": {
+         "meta": {
+            "name": "accident-v9-eccentric-twist",
+            "folder": "accident"
+         },
+         "path": "sketches/accident/accident-v9-eccentric-twist"
+      }
+   },
+   "genuary2022": {
+      "genuary2022-day1": {
+         "meta": {
+            "name": "genuary2022-day1",
+            "folder": "genuary2022"
+         },
+         "path": "sketches/genuary2022/genuary2022-day1"
+      },
+      "genuary2022-day13": {
+         "meta": {
+            "name": "genuary2022-day13",
+            "folder": "genuary2022"
+         },
+         "path": "sketches/genuary2022/genuary2022-day13"
+      },
+      "genuary2022-day15": {
+         "meta": {
+            "name": "genuary2022-day15",
+            "folder": "genuary2022"
+         },
+         "path": "sketches/genuary2022/genuary2022-day15"
+      },
+      "genuary2022-day16": {
+         "meta": {
+            "name": "genuary2022-day16",
+            "folder": "genuary2022"
+         },
+         "path": "sketches/genuary2022/genuary2022-day16"
+      },
+      "genuary2022-day17": {
+         "meta": {
+            "name": "genuary2022-day17",
+            "folder": "genuary2022"
+         },
+         "path": "sketches/genuary2022/genuary2022-day17"
+      },
+      "genuary2022-day2": {
+         "meta": {
+            "name": "genuary2022-day2",
+            "folder": "genuary2022"
+         },
+         "path": "sketches/genuary2022/genuary2022-day2"
+      },
+      "genuary2022-day3": {
+         "meta": {
+            "name": "genuary2022-day3",
+            "folder": "genuary2022"
+         },
+         "path": "sketches/genuary2022/genuary2022-day3"
+      },
+      "genuary2022-day5": {
+         "meta": {
+            "name": "genuary2022-day5",
+            "folder": "genuary2022"
+         },
+         "path": "sketches/genuary2022/genuary2022-day5"
+      },
+      "genuary2022-day8": {
+         "meta": {
+            "name": "genuary2022-day8",
+            "folder": "genuary2022"
+         },
+         "path": "sketches/genuary2022/genuary2022-day8"
+      },
+      "genuary2022-day8-polar-worm": {
+         "meta": {
+            "name": "genuary2022-day8-polar-worm",
+            "folder": "genuary2022"
+         },
+         "path": "sketches/genuary2022/genuary2022-day8-polar-worm"
+      },
+      "genuary2022-day8-silk": {
+         "meta": {
+            "name": "genuary2022-day8-silk",
+            "folder": "genuary2022"
+         },
+         "path": "sketches/genuary2022/genuary2022-day8-silk"
+      },
+      "genuary2022-game": {
+         "meta": {
+            "name": "genuary2022-game",
+            "folder": "genuary2022"
+         },
+         "path": "sketches/genuary2022/genuary2022-game"
+      }
+   },
    "glowing-fish": {
       "glowing-fishes-v0": {
          "meta": {
@@ -13,6 +278,43 @@
             "folder": "glowing-fish"
          },
          "path": "sketches/glowing-fish/glowing-fishes-v1"
+      }
+   },
+   "midi": {
+      "midi-v1-output": {
+         "meta": {
+            "name": "midi-v1-output",
+            "folder": "midi"
+         },
+         "path": "sketches/midi/midi-v1-output"
+      },
+      "midi-v2-input": {
+         "meta": {
+            "name": "midi-v2-input",
+            "folder": "midi"
+         },
+         "path": "sketches/midi/midi-v2-input"
+      },
+      "midi-v3-input-pills": {
+         "meta": {
+            "name": "midi-v3-input-pills",
+            "folder": "midi"
+         },
+         "path": "sketches/midi/midi-v3-input-pills"
+      },
+      "midi-v4-blurry": {
+         "meta": {
+            "name": "midi-v4-blurry",
+            "folder": "midi"
+         },
+         "path": "sketches/midi/midi-v4-blurry"
+      },
+      "midi-v6-visualizer-strips": {
+         "meta": {
+            "name": "midi-v6-visualizer-strips",
+            "folder": "midi"
+         },
+         "path": "sketches/midi/midi-v6-visualizer-strips"
       }
    },
    "neon": {
@@ -87,6 +389,20 @@
             "folder": "orbit"
          },
          "path": "sketches/orbit/orbit-v3-disk"
+      },
+      "orbit-v4-chewing-gum": {
+         "meta": {
+            "name": "orbit-v4-chewing-gum",
+            "folder": "orbit"
+         },
+         "path": "sketches/orbit/orbit-v4-chewing-gum"
+      },
+      "orbit-v5-chakra": {
+         "meta": {
+            "name": "orbit-v5-chakra",
+            "folder": "orbit"
+         },
+         "path": "sketches/orbit/orbit-v5-chakra"
       }
    },
    "polar-strip": {
@@ -124,6 +440,162 @@
             "folder": "polar-strip"
          },
          "path": "sketches/polar-strip/polar-strip-v2-lights-mouse"
+      }
+   },
+   "pulse": {
+      "pulse-v1-guts": {
+         "meta": {
+            "name": "pulse-v1-guts",
+            "folder": "pulse"
+         },
+         "path": "sketches/pulse/pulse-v1-guts"
+      },
+      "pulse-v2-kraken": {
+         "meta": {
+            "name": "pulse-v2-kraken",
+            "folder": "pulse"
+         },
+         "path": "sketches/pulse/pulse-v2-kraken"
+      },
+      "pulse-v3-asterix": {
+         "meta": {
+            "name": "pulse-v3-asterix",
+            "folder": "pulse"
+         },
+         "path": "sketches/pulse/pulse-v3-asterix"
+      },
+      "pulse-v4-trinity": {
+         "meta": {
+            "name": "pulse-v4-trinity",
+            "folder": "pulse"
+         },
+         "path": "sketches/pulse/pulse-v4-trinity"
+      },
+      "pulse-v5-flower": {
+         "meta": {
+            "name": "pulse-v5-flower",
+            "folder": "pulse"
+         },
+         "path": "sketches/pulse/pulse-v5-flower"
+      },
+      "pulse-v6-sonar": {
+         "meta": {
+            "name": "pulse-v6-sonar",
+            "folder": "pulse"
+         },
+         "path": "sketches/pulse/pulse-v6-sonar"
+      },
+      "pulse-v7-scan": {
+         "meta": {
+            "name": "pulse-v7-scan",
+            "folder": "pulse"
+         },
+         "path": "sketches/pulse/pulse-v7-scan"
+      },
+      "pulse-v7-scan-asterix": {
+         "meta": {
+            "name": "pulse-v7-scan-asterix",
+            "folder": "pulse"
+         },
+         "path": "sketches/pulse/pulse-v7-scan-asterix"
+      },
+      "pulse-v7-scan-bar": {
+         "meta": {
+            "name": "pulse-v7-scan-bar",
+            "folder": "pulse"
+         },
+         "path": "sketches/pulse/pulse-v7-scan-bar"
+      },
+      "pulse-v7-scan-churros": {
+         "meta": {
+            "name": "pulse-v7-scan-churros",
+            "folder": "pulse"
+         },
+         "path": "sketches/pulse/pulse-v7-scan-churros"
+      },
+      "pulse-v7-scan-folding": {
+         "meta": {
+            "name": "pulse-v7-scan-folding",
+            "folder": "pulse"
+         },
+         "path": "sketches/pulse/pulse-v7-scan-folding"
+      },
+      "pulse-v7-scan-up-down": {
+         "meta": {
+            "name": "pulse-v7-scan-up-down",
+            "folder": "pulse"
+         },
+         "path": "sketches/pulse/pulse-v7-scan-up-down"
+      },
+      "pulse-v7-torsade": {
+         "meta": {
+            "name": "pulse-v7-torsade",
+            "folder": "pulse"
+         },
+         "path": "sketches/pulse/pulse-v7-torsade"
+      },
+      "pulse-v7-turbine": {
+         "meta": {
+            "name": "pulse-v7-turbine",
+            "folder": "pulse"
+         },
+         "path": "sketches/pulse/pulse-v7-turbine"
+      },
+      "pulse-v7-turbine-butterfly": {
+         "meta": {
+            "name": "pulse-v7-turbine-butterfly",
+            "folder": "pulse"
+         },
+         "path": "sketches/pulse/pulse-v7-turbine-butterfly"
+      },
+      "pulse-v7-turbine-eccentric": {
+         "meta": {
+            "name": "pulse-v7-turbine-eccentric",
+            "folder": "pulse"
+         },
+         "path": "sketches/pulse/pulse-v7-turbine-eccentric"
+      },
+      "pulse-v7-turbine-flower": {
+         "meta": {
+            "name": "pulse-v7-turbine-flower",
+            "folder": "pulse"
+         },
+         "path": "sketches/pulse/pulse-v7-turbine-flower"
+      },
+      "pulse-v7-turbine-grid": {
+         "meta": {
+            "name": "pulse-v7-turbine-grid",
+            "folder": "pulse"
+         },
+         "path": "sketches/pulse/pulse-v7-turbine-grid"
+      },
+      "pulse-v7-turbines-familly": {
+         "meta": {
+            "name": "pulse-v7-turbines-familly",
+            "folder": "pulse"
+         },
+         "path": "sketches/pulse/pulse-v7-turbines-familly"
+      },
+      "pulse-v8-mirror": {
+         "meta": {
+            "name": "pulse-v8-mirror",
+            "folder": "pulse"
+         },
+         "path": "sketches/pulse/pulse-v8-mirror"
+      },
+      "pulse-v8-quadra": {
+         "meta": {
+            "name": "pulse-v8-quadra",
+            "folder": "pulse"
+         },
+         "path": "sketches/pulse/pulse-v8-quadra"
+      },
+      "pulse-v9-curtain": {
+         "meta": {
+            "name": "pulse-v9-curtain",
+            "folder": "pulse"
+         },
+         "path": "sketches/pulse/pulse-v9-curtain"
       }
    },
    "semaphore": {
@@ -207,6 +679,120 @@
          "path": "sketches/spirals/spiral-v9-donut"
       }
    },
+   "strips": {
+      "rainbow-orbit": {
+         "meta": {
+            "name": "rainbow-orbit",
+            "folder": "strips"
+         },
+         "path": "sketches/strips/rainbow-orbit"
+      },
+      "strips-v1-up-and-down": {
+         "meta": {
+            "name": "strips-v1-up-and-down",
+            "folder": "strips"
+         },
+         "path": "sketches/strips/strips-v1-up-and-down"
+      },
+      "strips-v2-worms": {
+         "meta": {
+            "name": "strips-v2-worms",
+            "folder": "strips"
+         },
+         "path": "sketches/strips/strips-v2-worms"
+      },
+      "strips-v3-half-curve-fix-inner-count": {
+         "meta": {
+            "name": "strips-v3-half-curve-fix-inner-count",
+            "folder": "strips"
+         },
+         "path": "sketches/strips/strips-v3-half-curve-fix-inner-count"
+      },
+      "strips-v3-half-curve-fix-inner-count-2": {
+         "meta": {
+            "name": "strips-v3-half-curve-fix-inner-count-2",
+            "folder": "strips"
+         },
+         "path": "sketches/strips/strips-v3-half-curve-fix-inner-count-2"
+      },
+      "strips-v3-half-play-fix-inner-count": {
+         "meta": {
+            "name": "strips-v3-half-play-fix-inner-count",
+            "folder": "strips"
+         },
+         "path": "sketches/strips/strips-v3-half-play-fix-inner-count"
+      },
+      "strips-v3-half-play-variable-inner-count": {
+         "meta": {
+            "name": "strips-v3-half-play-variable-inner-count",
+            "folder": "strips"
+         },
+         "path": "sketches/strips/strips-v3-half-play-variable-inner-count"
+      },
+      "strips-v3-knot-fix-inner-count": {
+         "meta": {
+            "name": "strips-v3-knot-fix-inner-count",
+            "folder": "strips"
+         },
+         "path": "sketches/strips/strips-v3-knot-fix-inner-count"
+      },
+      "strips-v3-play-fix-inner-count": {
+         "meta": {
+            "name": "strips-v3-play-fix-inner-count",
+            "folder": "strips"
+         },
+         "path": "sketches/strips/strips-v3-play-fix-inner-count"
+      },
+      "strips-v3-play-fix-inner-count-high-opacity-factor": {
+         "meta": {
+            "name": "strips-v3-play-fix-inner-count-high-opacity-factor",
+            "folder": "strips"
+         },
+         "path": "sketches/strips/strips-v3-play-fix-inner-count-high-opacity-factor"
+      },
+      "strips-v3-play-variable-inner-count": {
+         "meta": {
+            "name": "strips-v3-play-variable-inner-count",
+            "folder": "strips"
+         },
+         "path": "sketches/strips/strips-v3-play-variable-inner-count"
+      },
+      "strips-v4-square-cords": {
+         "meta": {
+            "name": "strips-v4-square-cords",
+            "folder": "strips"
+         },
+         "path": "sketches/strips/strips-v4-square-cords"
+      },
+      "strips-v5-perpetual-lines": {
+         "meta": {
+            "name": "strips-v5-perpetual-lines",
+            "folder": "strips"
+         },
+         "path": "sketches/strips/strips-v5-perpetual-lines"
+      },
+      "strips-v6-white-lines": {
+         "meta": {
+            "name": "strips-v6-white-lines",
+            "folder": "strips"
+         },
+         "path": "sketches/strips/strips-v6-white-lines"
+      },
+      "test": {
+         "meta": {
+            "name": "test",
+            "folder": "strips"
+         },
+         "path": "sketches/strips/test"
+      },
+      "ukraine": {
+         "meta": {
+            "name": "ukraine",
+            "folder": "strips"
+         },
+         "path": "sketches/strips/ukraine"
+      }
+   },
    "torsade": {
       "torsade-juggle": {
          "meta": {
@@ -228,6 +814,27 @@
             "folder": "torsade"
          },
          "path": "sketches/torsade/torsade-v1-unmelted"
+      },
+      "torsade-v10-rabbit-hole": {
+         "meta": {
+            "name": "torsade-v10-rabbit-hole",
+            "folder": "torsade"
+         },
+         "path": "sketches/torsade/torsade-v10-rabbit-hole"
+      },
+      "torsade-v11-infinite": {
+         "meta": {
+            "name": "torsade-v11-infinite",
+            "folder": "torsade"
+         },
+         "path": "sketches/torsade/torsade-v11-infinite"
+      },
+      "torsade-v12-gradient-worms": {
+         "meta": {
+            "name": "torsade-v12-gradient-worms",
+            "folder": "torsade"
+         },
+         "path": "sketches/torsade/torsade-v12-gradient-worms"
       },
       "torsade-v2-chain": {
          "meta": {
@@ -314,13 +921,6 @@
             "folder": "worms"
          },
          "path": "sketches/worms/worms-v2-wavy"
-      },
-      "worms-v3-jar": {
-         "meta": {
-            "name": "worms-v3-jar",
-            "folder": "worms"
-         },
-         "path": "sketches/worms/worms-v3-jar"
       },
       "worms-v4-starry": {
          "meta": {
