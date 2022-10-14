@@ -2,18 +2,10 @@
   "name": "sketch-gallery",
   "version": "0.0.6",
   "files": [
-    "dist",
+    "src",
     "index.html",
     "vite.config.js"
   ],
-  "main": "./dist/sketch-gallery.umd.js",
-  "module": "./dist/sketch-gallery.es.js",
-  "exports": {
-    ".": {
-      "import": "./dist/sketch-gallery.es.js",
-      "require": "./dist/sketch-gallery.umd.js"
-    }
-  },
   "bin": {
     "sketch-gallery": "./src/cli.js"
   },
