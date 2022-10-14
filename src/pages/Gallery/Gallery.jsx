@@ -32,7 +32,7 @@ const Gallery = () => {
                 <li key={name} className="sketch">
                   <a href={`${import.meta.env.BASE_URL}${path}`}>
                     {/* <img src={ `https://picsum.photos/seed/${name}/512/512` }/> */}
-                    <img src={`${import.meta.env.BASE_URL}${path}/screenshoot.png`}/>
+                    <img src={`${import.meta.env.BASE_URL}${path}/screenshoot.jpeg`}/>
                     <span>{name}</span>
                   </a>
                 </li>
