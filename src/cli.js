@@ -27,6 +27,10 @@ viteBuildingCommand
     shell(`cp -r ${resolvedSources.join(" ")} ${viteBuildDistPath}`);
   })
   .then(() => {
+    if ( action !== 'deploy' ) {
+      return
+    }
+
     ghpages.publish(
       viteBuildDistPath,
       {

@@ -20,7 +20,16 @@ const Gallery = () => {
     <div>
       <header>
         <h1 hidden>&lt;Gallery author="costadrouge"/&gt;</h1>
-        <h1>My p5js sketches 🎨</h1>
+        <h1>My open-sourced p5js sketches</h1>
+
+        <a href="https://www.instagram.com/costardrouge.jpg/" target="_blank">
+          instagram
+        </a>
+        <span>&nbsp;</span>
+
+        <a href="https://www.twitter.com/BlousonRouge" target="_blank">
+          twitter
+        </a>
       </header>
 
       <ul>
@@ -32,7 +41,7 @@ const Gallery = () => {
                 <li key={name} className="sketch">
                   <a href={`${import.meta.env.BASE_URL}${path}`}>
                     {/* <img src={ `https://picsum.photos/seed/${name}/512/512` }/> */}
-                    <img src={`${import.meta.env.BASE_URL}${path}/screenshoot.jpeg`}/>
+                    <img src={`${import.meta.env.BASE_URL}${path}/screenshot.jpeg`}/>
                     <span>{name}</span>
                   </a>
                 </li>
@@ -41,22 +50,6 @@ const Gallery = () => {
           </li>
         ))}
       </ul>
-
-      <footer>
-        <br />
-        <br />
-        <br />
-        <br />
-
-        <a href="https://www.instagram.com/costardrouge.jpg/" target="_blank">
-          instagram
-        </a>
-        <span>&nbsp;</span>
-
-        <a href="https://www.twitter.com/BlousonRouge" target="_blank">
-          twitter
-        </a>
-      </footer>
     </div>
   );
 };
