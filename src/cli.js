@@ -4,7 +4,6 @@ const shell = require("child_process").execSync;
 const ghpages = require("gh-pages");
 const { resolve } = require("path");
 const { build } = require("vite");
-// const fs = require('fs');
 
 const [, , action, baseUrl, ...args] = process.argv;
 const resolvedSources = args.map((source) => resolve(source));
