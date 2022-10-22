@@ -1,12 +1,12 @@
 body,
 html {
   height: 100vh;
-  --dark-color: #000000;
+  --dark-color: #1e1d1d;
   --light-color: #f9f7f2;
 }
 
 body {
-  background: black;
+  background: var(--dark-color);
   color: var(--light-color);
 
   font-family: 'Lexend Deca', sans-serif;
@@ -14,6 +14,11 @@ body {
   padding: 0 0.5em;
   margin: 0;
 }
+
+div#root {
+  padding-bottom: 64px;
+}
+
 
 h2 {
   text-align: center;
@@ -27,8 +32,8 @@ ul {
 }
 
 h3 {
-  border: 1px solid white;
-  outline: 1px solid black;
+  border: 1px solid var(--light-color);
+  outline: 1px solid var(--dark-color);
   border-left: none;
   padding: 0.5em;
   margin: 0.5em 0 0.5em -10px;
@@ -48,7 +53,7 @@ h3 {
   min-height: calc(20vw);
   margin: 0 2px;
 
-  border: 1px solid white;
+  border: 1px solid var(--light-color);
   position: relative;
 
   overflow: hidden;
@@ -76,7 +81,7 @@ h3 {
   position: absolute;
   bottom: 0px;
   width: 100%;
-  border-top: 1px solid white;
+  border-top: 1px solid var(--light-color);
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(0.3rem); 
 }
@@ -97,7 +102,7 @@ a:visited::before {
   top: 0.5em;
   right: 0.5em;
   font-size: 1.5em;
-  text-shadow: 0px 0px 1px white;
+  text-shadow: 0px 0px 1px var(--light-color);
   border: 1px solid rgb(85, 26, 139);
   background-color: rgb(85, 26, 139);
   border-radius: 50%;
@@ -112,4 +117,31 @@ img {
 
 footer {
   text-align: right;
+}
+
+div#social a {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 6px 10px;
+  display: inline-block;
+  color: var(--light-color);
+  font-size: large;
+  border: 2px solid var(--light-color);
+  text-decoration: none;
+}
+
+div#social a+a {
+  margin-left: 10px;
+}
+
+div#social {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 0;
+  border-top: 2px solid var(--light-color);
+  backdrop-filter: blur(0.3rem); 
+  text-align: center;
 }
