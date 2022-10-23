@@ -12,27 +12,15 @@ const Gallery = () => {
       .then(setTree, console.error);
   }, [])
 
-  const sortedTree = useMemo( () => {
-    // const treeKeyByMtime = keyBy( tree, "meta._mtime");
-    // const cleanedTree = forEach( treeKeyByMtime, (_, branch) => {
-    //   delete treeKeyByMtime[branch]?._mtime;
-    // });
-
-    // console.log({cleanedTree});
-
-    return sortBy( tree, "meta._mtime").reverse()
-  }, [tree]);
-
-  console.log(sortedTree);
+  const sortedTree = useMemo( () => sortBy( tree, "meta._mtime"), [tree]);
 
   if (!tree) {
-    return <div>Loading...</div>;
+    return <div>Loading... ⏳</div>;
   }
 
   return (
     <div>
       <header>
-        <h1 hidden>&lt;Gallery author="costadrouge"/&gt;</h1>
         <h1>My open-sourced p5js sketches</h1>
 
         <div id="social">
