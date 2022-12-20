@@ -19,6 +19,9 @@ div#root {
   padding-bottom: 64px;
 }
 
+a:not(:hover) {
+  text-decoration: none;
+}
 
 h2 {
   text-align: center;
@@ -48,15 +51,23 @@ h3 {
 }
 
 .sketch {
+  --border-color: var(--light-color);
+  --font-color: var(--light-color);
+
   display: inline-block;
   width: calc(45vw);
   min-height: calc(20vw);
   margin: 0 2px;
 
-  border: 1px solid var(--light-color);
+  border: 1px solid var(--border-color);
   position: relative;
 
   overflow: hidden;
+}
+
+.sketch:hover {
+  /* --border-color: red; */
+  /* --font-color: red; */
 }
 
 @media screen and (min-width: 800px) {
@@ -71,20 +82,29 @@ h3 {
   }
 }
 
-.sketch span {
+.sketch span, a.github {
   hyphens: auto;
   padding: 8px;
   word-break: break-word;
   text-overflow: ellipsis;
-  color: #f9f7f2;
+  color:var(--font-color);
 
   position: absolute;
-  bottom: 0px;
   width: 100%;
-  border-top: 1px solid var(--light-color);
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(0.3rem); 
 }
+
+.sketch span {
+  bottom: 0px;
+  border-top: 1px solid var(--border-color);
+}
+
+.sketch a.github  {
+  top: 0px;
+  border-bottom: 1px solid var(--border-color);
+}
+
 
 .sketch:hover span {
   backdrop-filter: blur(0.1rem); 
@@ -126,7 +146,6 @@ div#social a {
   color: var(--light-color);
   font-size: large;
   border: 2px solid var(--light-color);
-  text-decoration: none;
 }
 
 div#social a+a {
