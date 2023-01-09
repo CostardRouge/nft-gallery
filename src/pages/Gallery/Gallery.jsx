@@ -3,8 +3,6 @@ import { useEffect, useState, useMemo } from "react";
 import "./Gallery.css";
 import { map, sortBy } from "lodash";
 
-// https://picsum.photos/512
-
 const getImagePath = (name, path) => {
   if (import.meta.env.MODE === 'development') {
     return `https://picsum.photos/seed/${name}/512/512`
@@ -22,7 +20,7 @@ const Gallery = () => {
       .then(setTree, console.error);
   }, [])
 
-  const sortedTree = useMemo( () => sortBy( tree, "meta._mtime"), [tree]);
+  const sortedTree = useMemo( () => sortBy( tree, "meta._mtime").reverse(), [tree]);
 
   if (!tree) {
     return <div>Loading... ⏳</div>;
