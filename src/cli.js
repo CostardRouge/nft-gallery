@@ -14,10 +14,15 @@ console.log(`sources:\n${resolvedSources.map((source) => `\t- ${source}\n`).join
 
 const viteBuildDistPath = resolve(__dirname, "../dist");
 
-const viteBuildingCommand = build({
+const viteBuildingCommandOptions = {
   root: resolve(__dirname, ".."),
-  base: `/${baseUrl}/`
-});
+};
+
+if ( "/" !== baseUrl ) {
+  viteBuildingCommandOptions.base = `/${baseUrl}/`;
+}
+
+const viteBuildingCommand = build(viteBuildingCommandOptions);
 
 viteBuildingCommand
   .then(() => console.log("vite build done"))

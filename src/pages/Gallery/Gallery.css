@@ -65,11 +65,6 @@ h3 {
   overflow: hidden;
 }
 
-.sketch:hover {
-  /* --border-color: red; */
-  /* --font-color: red; */
-}
-
 @media screen and (min-width: 800px) {
   .sketch {
     width: calc(25vw);
@@ -82,7 +77,7 @@ h3 {
   }
 }
 
-.sketch span, a.github {
+.sketch div.top, div.bottom {
   hyphens: auto;
   padding: 8px;
   word-break: break-word;
@@ -95,24 +90,25 @@ h3 {
   backdrop-filter: blur(0.3rem); 
 }
 
-.sketch span {
-  bottom: 0px;
-  border-top: 1px solid var(--border-color);
-}
-
-.sketch a.github  {
+.sketch div.top {
   top: 0px;
   border-bottom: 1px solid var(--border-color);
 }
 
+.sketch div.bottom  {
+  bottom: 0px;
+  border-top: 1px solid var(--border-color);  
+}
 
-.sketch:hover span {
+
+.sketch:hover div.top, div.bottom {
   backdrop-filter: blur(0.1rem); 
   background: rgba(0, 0, 0, 0.2);
 }
 
-a:visited span {
-  color: rgb(146, 146, 146);
+a:visited {
+  --font-color: red;
+  /* color: rgb(146, 146, 146); */
 }
 
 a:visited::before {
