@@ -57,7 +57,7 @@ const Gallery = () => {
             >
               {name} ({Object.keys(sketches).length})
             </h3>
-            <ul>
+            <ul class="sketches">
               {map(sketches, ({ meta: { name }, path }) => (
                 <li
                   key={name}

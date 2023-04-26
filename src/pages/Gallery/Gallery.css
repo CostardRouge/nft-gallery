@@ -4,8 +4,6 @@ html {
   height: 100dvh;
   --dark-color: #1e1d1d;
   --light-color: #f9f7f2;
-
-  overflow-x: hidden;
 }
 
 body {
@@ -31,19 +29,10 @@ h2 {
   margin-bottom: 1.5em;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
 h3 {
-  /* border: 1px solid var(--light-color); */
-  /* outline: 1px solid var(--dark-color); */
   border-left: none;
   padding: 0.5em;
   margin: 0.5em 0 0.5em -10px;
-  /* width: fit-content; */
   width: 100%;
 
   text-transform: uppercase;
@@ -56,41 +45,62 @@ h3 {
   backdrop-filter: blur(0.3rem);
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul.sketches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3em;
+}
+
+.sketch:nth-child(2n + 1),
+.sketch:nth-child(2n + 2) {
+  flex: 0 0 calc(var(--width) - 10px);
+}
+
 .sketch {
   --border-color: var(--dark-color);
   --font-color: var(--light-color);
 
-  display: inline-block;
-  width: calc(45vw);
-  min-height: calc(25vw);
-  margin: 0 2px;
-
-  background-size: cover;
+  background-repeat: no-repeat;
   background-size: 100%;
 
   border: 1px solid var(--border-color);
   position: relative;
-
 
   transition: all 0.3s ease-out;
 }
 
 .sketch:hover {
   cursor: pointer;
-  /* background-position: center; */
   background-size: 105%;
+}
 
+@media screen and (max-width: 400px) {
+  .sketch {
+    --width: 50%;
+    height: 25vh;
+    height: 25dvh;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .sketch {
+    --width: 33%;
+    height: 25vh;
+    height: 25dvh;
+  }
 }
 
 @media screen and (min-width: 800px) {
   .sketch {
-    width: calc(25vw);
-  }
-}
-
-@media screen and (min-width: 1600px) {
-  .sketch {
-    width: calc(20vw);
+    --width: 400px;
+    height: 400px;
+    height: 400px;
   }
 }
 
@@ -149,10 +159,6 @@ h3 {
   height: 5px;
 }
 
-footer {
-  text-align: right;
-}
-
 div#social a {
   background: rgba(0, 0, 0, 0.6);
   padding: 6px 10px;
@@ -170,7 +176,7 @@ div#social {
   position: fixed;
   bottom: 0;
   left: 0;
-  z-index: 10;
+  z-index: 15;
   width: 100%;
   background: rgba(0, 0, 0, 0.6);
   padding: 10px 0;
