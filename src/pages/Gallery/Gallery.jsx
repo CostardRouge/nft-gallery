@@ -59,13 +59,20 @@ const Gallery = () => {
             </h3>
             <ul>
               {map(sketches, ({ meta: { name }, path }) => (
-                <li key={name} className="sketch">
+                <li
+                  key={name}
+                  className="sketch"
+                  style={ {
+                    backgroundImage: `url(${getImagePath(name, path)})`
+                  }}
+                  onClick={ () => {
+                    location.href = `${import.meta.env.BASE_URL}${path}`
+                  }}
+                >
                   <a href={`${import.meta.env.BASE_URL}${path}`}>
                     <div className="top">
                       <span>{name}</span>
                     </div>
-
-                    <img src={getImagePath(name, path)}/>
 
                     <div className="bottom">
                         <a
