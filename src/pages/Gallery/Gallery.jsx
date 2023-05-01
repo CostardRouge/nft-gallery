@@ -1,4 +1,4 @@
-import { useEffect, useState, useMemo } from "react";
+import { Fragment, useEffect, useState, useMemo } from "react";
 
 import "./Gallery.css";
 import { map, sortBy } from "lodash";
@@ -27,11 +27,48 @@ const Gallery = () => {
   }
 
   return (
-    <div>
+    <Fragment>
       <header>
         <h1>My open-sourced p5js sketches</h1>
+      </header>
 
-        <div id="social">
+      {map(sortedTree, ({ sketches, meta: { name, _mtime }}) => (
+        <div key={name}>
+          <h3 title={new Intl.DateTimeFormat('en-US').format(new Date(_mtime))}>
+            {name} ({Object.keys(sketches).length})
+          </h3>
+
+          <div className="sketches">
+            {map(sketches, ({ meta: { name }, path }) => (
+              <div
+                className="sketch"
+                key={name}
+                style={ {
+                  backgroundImage: `url(${getImagePath(name, path)})`
+                } }
+              >
+                <a href={`${import.meta.env.BASE_URL}${path}`} >
+                  <div className="top">
+                    <span>{name}</span>
+                  </div>
+                </a>
+
+                {/* <div className="bottom"> */}
+                  <a
+                    target="_blank"
+                    className="bottom"
+                    href={ `https://github.com/CostardRouge/generative-art-p5js/blob/main/${path}/index.js` }
+                  >
+                    source code
+                  </a>
+                {/* </div> */}
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+
+      <div id="social">
           <a href="https://www.instagram.com/costardrouge.jpg/" target="_blank">
             <span>📷&nbsp;</span>
             instagram
@@ -46,50 +83,8 @@ const Gallery = () => {
             <span>🐙&nbsp;</span>
             github
           </a>
-        </div>
-      </header>
-
-      <ul>
-        {map(sortedTree, ({ sketches, meta: { name, _mtime }}) => (
-          <li key={name}>
-            <h3
-              title={new Intl.DateTimeFormat('en-US').format(new Date(_mtime))}
-            >
-              {name} ({Object.keys(sketches).length})
-            </h3>
-            <ul class="sketches">
-              {map(sketches, ({ meta: { name }, path }) => (
-                <li
-                  key={name}
-                  className="sketch"
-                  style={ {
-                    backgroundImage: `url(${getImagePath(name, path)})`
-                  }}
-                  onClick={ () => {
-                    location.href = `${import.meta.env.BASE_URL}${path}`
-                  }}
-                >
-                  <a href={`${import.meta.env.BASE_URL}${path}`}>
-                    <div className="top">
-                      <span>{name}</span>
-                    </div>
-
-                    <div className="bottom">
-                        <a
-                          target="_blank"
-                          href={ `https://github.com/CostardRouge/generative-art-p5js/blob/main/${path}/index.js` }
-                        >
-                          source code
-                        </a>
-                    </div>
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </li>
-        ))}
-      </ul>
-    </div>
+      </div>
+    </Fragment>
   );
 };
 

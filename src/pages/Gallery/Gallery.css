@@ -45,13 +45,7 @@ h3 {
   backdrop-filter: blur(0.3rem);
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-ul.sketches {
+.sketches {
   display: flex;
   flex-wrap: wrap;
   gap: 0.3em;
@@ -65,14 +59,19 @@ ul.sketches {
 .sketch {
   --border-color: var(--dark-color);
   --font-color: var(--light-color);
+  --width: 50%;
+  height: 25vh;
+  height: 25dvh;
 
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
+  background-position: center;
   background-size: 100%;
+  /* background-size: cover; */
 
   border: 1px solid var(--border-color);
   position: relative;
 
-  transition: all 0.3s ease-out;
+  transition: background-size 0.3s ease-out;
 }
 
 .sketch:hover {
@@ -80,15 +79,7 @@ ul.sketches {
   background-size: 105%;
 }
 
-@media screen and (max-width: 400px) {
-  .sketch {
-    --width: 50%;
-    height: 25vh;
-    height: 25dvh;
-  }
-}
-
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 800px) {
   .sketch {
     --width: 33%;
     height: 25vh;
@@ -96,7 +87,7 @@ ul.sketches {
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1200px) {
   .sketch {
     --width: 400px;
     height: 400px;
@@ -104,7 +95,7 @@ ul.sketches {
   }
 }
 
-.sketch div.top, div.bottom {
+.sketch div.top, .bottom {
   hyphens: auto;
   padding: 8px;
   word-break: break-word;
@@ -115,8 +106,7 @@ ul.sketches {
   background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(0.3rem); 
 
-  transition: all 0.3s ease-in-out;
-
+  transition: backdrop-filter 0.3s ease-in-out;
 }
 
 .sketch div.top {
@@ -124,39 +114,24 @@ ul.sketches {
   /* border-bottom: 1px solid var(--border-color); */
 }
 
-.sketch div.bottom  {
+.sketch .bottom  {
   bottom: 0px;
   text-align: right;
   /* border-top: 1px solid var(--border-color);   */
 }
 
-.sketch:hover div.top, .sketch:hover div.bottom {
+.sketch:hover div.top, .sketch:hover .bottom {
   backdrop-filter: blur(0.1rem); 
   background: rgba(0, 0, 0, 0.6);
 }
 
-.sketch div.bottom a  {
+.sketch .bottom {
   color: var(--light-color);
 }
 
-.sketch div.bottom a:visited {
+.sketch a.bottom:visited {
   --font-color: red;
   /* color: rgb(146, 146, 146); */
-}
-
-.sketch div.bottom a:visited::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0.5em;
-  right: 0.5em;
-  font-size: 1.5em;
-  text-shadow: 0px 0px 1px var(--light-color);
-  border: 1px solid rgb(85, 26, 139);
-  background-color: rgb(85, 26, 139);
-  border-radius: 50%;
-  width: 5px;
-  height: 5px;
 }
 
 div#social a {
