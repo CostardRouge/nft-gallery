@@ -11,8 +11,6 @@ body {
   color: var(--light-color);
 
   font-family: 'Lexend Deca', sans-serif;
-
-  padding: 0 0.5em;
   margin: 0;
 }
 
@@ -32,13 +30,11 @@ h2 {
 h3 {
   border-left: none;
   padding: 0.5em;
-  margin: 0.5em 0 0.5em -10px;
-  width: 100%;
+  margin: 0.5em 0;
 
   text-transform: uppercase;
   position: sticky;
   z-index: 10;
-  top: 0.5em;
   top: 0;
   left: 0px;
   background: rgba(0, 0, 0, 0.6);
@@ -95,7 +91,7 @@ h3 {
   }
 }
 
-.sketch div.top, .bottom {
+.sketch .top, .bottom {
   hyphens: auto;
   padding: 8px;
   word-break: break-word;
@@ -109,7 +105,8 @@ h3 {
   transition: backdrop-filter 0.3s ease-in-out;
 }
 
-.sketch div.top {
+.sketch .top {
+  display: block;
   top: 0px;
   /* border-bottom: 1px solid var(--border-color); */
 }
@@ -120,7 +117,7 @@ h3 {
   /* border-top: 1px solid var(--border-color);   */
 }
 
-.sketch:hover div.top, .sketch:hover .bottom {
+.sketch:hover .top, .sketch:hover .bottom {
   backdrop-filter: blur(0.1rem); 
   background: rgba(0, 0, 0, 0.6);
 }

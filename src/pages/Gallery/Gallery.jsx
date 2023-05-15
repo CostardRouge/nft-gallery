@@ -40,29 +40,24 @@ const Gallery = () => {
 
           <div className="sketches">
             {map(sketches, ({ meta: { name }, path }) => (
-              <div
+              <a
                 className="sketch"
+                href={`${import.meta.env.BASE_URL}${path}`}
                 key={name}
                 style={ {
                   backgroundImage: `url(${getImagePath(name, path)})`
                 } }
               >
-                <a href={`${import.meta.env.BASE_URL}${path}`} >
-                  <div className="top">
-                    <span>{name}</span>
-                  </div>
-                </a>
+                <span className="top">{name}</span>
 
-                {/* <div className="bottom"> */}
-                  <a
-                    target="_blank"
-                    className="bottom"
-                    href={ `https://github.com/CostardRouge/generative-art-p5js/blob/main/${path}/index.js` }
-                  >
-                    source code
-                  </a>
-                {/* </div> */}
-              </div>
+                <a
+                  target="_blank"
+                  className="bottom"
+                  href={ `https://github.com/CostardRouge/generative-art-p5js/blob/main/${path}/index.js` }
+                >
+                  source code
+                </a>
+              </a>
             ))}
           </div>
         </div>
